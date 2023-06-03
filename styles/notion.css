@@ -379,9 +379,11 @@
   border-image-slice: 1;
 }
 
-/* Jonathan's Modifications 
----------------------------------------------------------------------------
-*/
+/*------------------------------------------
+Jonathan's Modifications
+------------------------------------------*/
+
+/* NOTE: Do not try to text-align: center things */
 
 /*------------------------------------------
 CTA Button
@@ -410,7 +412,7 @@ CTA Button
   text-align: center;
   padding-top: 5px;
   
-  font-size: 22px;
+  font-size: 18px;
   color: white;
   background-color: rgb(55, 53, 47);
   border: none;
@@ -418,16 +420,27 @@ CTA Button
 }
 
 .notion-callout, .notion-callout-text, .notion-callout-text .notion-link {
-  height: 50px;
+  height: 40px;
+}
+
+.notion-callout-text {
+  margin: 0;
 }
 
  .notion-callout-text.notion-link:focus, .notion-callout-text .notion-link:hover {
   background-image: none;
 }
 
-.notion-block-7c107d70e633483ebddb1fe8290d19c2,
-.notion-block-0ae057d67c554191b6147b773879cd85 {
-  text-align: center;
+/*------------------------------------------
+Working on Title
+------------------------------------------*/
+
+.notion-block-ee564f56996a4935a9be1a61efd0831a .notion-title { /* Hide Title */
+  display: none;
+}
+
+.notion-block-778876f1213f4c8e8944e4180cd78f80 {  /* Increase H1 to Title */
+  font-size: 2.5em;
 }
 
 /*------------------------------------------
@@ -437,4 +450,6 @@ Hidden Pages
 .notion-block-767ad742d6cd47d1b3db768bdd57ce5e {
   display: none;
 }
+
+
 
