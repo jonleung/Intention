@@ -379,7 +379,13 @@
   border-image-slice: 1;
 }
 
-/* Jonathan's Modifications */
+/* Jonathan's Modifications 
+---------------------------------------------------------------------------
+*/
+
+/*------------------------------------------
+CTA Button
+------------------------------------------*/
 
 .notion-callout {
   position: relative;
@@ -417,5 +423,18 @@
 
  .notion-callout-text.notion-link:focus, .notion-callout-text .notion-link:hover {
   background-image: none;
+}
+
+.notion-block-7c107d70e633483ebddb1fe8290d19c2,
+.notion-block-0ae057d67c554191b6147b773879cd85 {
+  text-align: center;
+}
+
+/*------------------------------------------
+Hidden Pages
+------------------------------------------*/
+
+.notion-block-767ad742d6cd47d1b3db768bdd57ce5e {
+  display: none;
 }
 
