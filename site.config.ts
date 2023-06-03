@@ -61,5 +61,6 @@ export default siteConfig({
       title: '👋 Contact',
       pageId: '6e409983936943f19a8f98a0156e9729'
     }
-  ]
+  ],
+  isSearchEnabled: false,
 })
