@@ -6,7 +6,7 @@ export default siteConfig({
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: null,
+  rootNotionSpaceId: '6fac091b-bfb1-4410-8ab0-3f4a4d32eff3',
 
   // basic site info (required)
   name: 'Intention',

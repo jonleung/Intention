@@ -379,10 +379,43 @@
   border-image-slice: 1;
 }
 
-.notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-column {
-  padding: 0;
+/* Jonathan's Modifications */
+
+.notion-callout {
+  position: relative;
+  border: none;
 }
 
-.notion-block-260baa77f1e1428b97fb14ac99c7c385 {
+.notion-callout.notion-gray_background_co {
+  background-color: transparent;
+}
+
+.notion-page-icon-inline {
   display: none;
 }
+
+.notion-callout-text, .notion-callout-text .notion-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  
+  text-align: center;
+  padding-top: 5px;
+  
+  font-size: 22px;
+  color: white;
+  background-color: rgb(55, 53, 47);
+  border: none;
+  border-radius: 8px;
+}
+
+.notion-callout, .notion-callout-text, .notion-callout-text .notion-link {
+  height: 50px;
+}
+
+ .notion-callout-text.notion-link:focus, .notion-callout-text .notion-link:hover {
+  background-image: none;
+}
+
