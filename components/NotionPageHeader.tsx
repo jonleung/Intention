@@ -13,22 +13,22 @@ import styles from './styles.module.css'
 
 const ToggleThemeButton = () => {
   const [hasMounted, setHasMounted] = React.useState(false)
-  // const { isDarkMode, toggleDarkMode } = useDarkMode()
+  const { isDarkMode, toggleDarkMode } = useDarkMode()
 
   React.useEffect(() => {
     setHasMounted(true)
   }, [])
 
-  // const onToggleTheme = React.useCallback(() => {
-  //   toggleDarkMode()
-  // }, [toggleDarkMode])
+  const onToggleTheme = React.useCallback(() => {
+    toggleDarkMode()
+  }, [toggleDarkMode])
 
   return (
     <div
       className={cs('breadcrumb', 'button', !hasMounted && styles.hidden)}
-      // onClick={onToggleTheme}
+      onClick={onToggleTheme}
     >
-      {/* {hasMounted && isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />} */}
+      {hasMounted && isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
     </div>
   )
 }
@@ -77,8 +77,6 @@ export const NotionPageHeader: React.FC<{
               }
             })
             .filter(Boolean)}
-
-          <ToggleThemeButton />
 
           {isSearchEnabled && <Search block={block} title={null} />}
         </div>
