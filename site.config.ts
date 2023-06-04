@@ -54,7 +54,7 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: '🗞️ Company Updates',
+      title: '🗞️ Project Updates',
       pageId: '342aa007cd1a4138a24fa8e44d76cb69'
     },
     {
