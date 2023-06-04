@@ -54,11 +54,11 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: '🗞️ Project Updates',
+      title: '💌 Project Updates',
       pageId: '342aa007cd1a4138a24fa8e44d76cb69'
     },
     {
-      title: '👋 Contact',
+      title: '👋 Say Hi!',
       pageId: '6e409983936943f19a8f98a0156e9729'
     }
   ],
