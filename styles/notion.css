@@ -26,6 +26,7 @@
 }
 
 .notion-text {
+  max-width: 455px;
   padding: 0.5em 2px;
 }
 
@@ -46,6 +47,7 @@
 .notion-header .notion-nav-header {
   max-width: 1100px;
   margin: 0 auto;
+  border-bottom: 1px solid rgb(237, 233, 227);
 }
 
 .notion-nav-header-rhs {
@@ -167,7 +169,6 @@
 
 .notion-title {
   display: block;
-  text-align: center;
 }
 
 .notion-collection-row {
@@ -354,6 +355,7 @@
 .notion-page-icon-hero.notion-page-icon-image span,
 .notion-page-icon-hero.notion-page-icon-image img {
   border-radius: 50%;
+  position:relative;
 }
 
 .notion-header {
@@ -386,12 +388,37 @@ Jonathan's Modifications
 /* NOTE: Do not try to text-align: center things */
 
 /*------------------------------------------
+Remove Top Margin from 
+------------------------------------------*/
+
+.notion-page-no-cover {
+  padding-top: 40px;
+}
+
+/*------------------------------------------
+Icon Left Aligned
+------------------------------------------*/
+.notion-page-icon-hero.notion-page-icon-span {
+  margin-left: 0;
+}
+
+.notion-page-icon-hero {
+  position: relative;
+  left: 0%;
+  display: block;
+  margin-bottom: 50px;
+}
+
+
+
+/*------------------------------------------
 CTA Button
 ------------------------------------------*/
 
 .notion-callout {
   position: relative;
   border: none;
+  max-width: 225px;
 }
 
 .notion-callout.notion-gray_background_co {
@@ -419,6 +446,10 @@ CTA Button
   border-radius: 8px;
 }
 
+.notion-callout-text:hover, .notion-callout-text .notion-link:hover {
+  background-color: rgb( 64, 64, 64);
+}
+
 .notion-callout, .notion-callout-text, .notion-callout-text .notion-link {
   height: 40px;
 }
@@ -427,7 +458,7 @@ CTA Button
   margin: 0;
 }
 
- .notion-callout-text.notion-link:focus, .notion-callout-text .notion-link:hover {
+.notion-callout-text.notion-link:focus, .notion-callout-text .notion-link:hover, a:visited {
   background-image: none;
 }
 
